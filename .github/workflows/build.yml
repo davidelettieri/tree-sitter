@@ -172,7 +172,7 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: tree-sitter.${{ matrix.platform }}
-        path: target/${{ matrix.target }}/release/tree-sitter${{ env.EXE }}
+        path: target/${{ matrix.target }}/release/*
         if-no-files-found: error
         retention-days: 7
 
